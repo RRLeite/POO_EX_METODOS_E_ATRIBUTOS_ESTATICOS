@@ -14,58 +14,68 @@ package ConversaoMedidas;
  */
 public class ConversaoDeUnidadesDeArea {
     
-    private float metroQuadrado;
-    private float peQuadrado;
-    private float milhaQuadrada;
-    private float acre;
-    private float altura;
-    private float largura;
+    private double metroQuadrado;
+    private double peQuadrado;
+    private double milhaQuadrada;
+    private double acre;
+    private double altura;
+    private double largura;
 
     
     
     
     //SETS
     
-    public void setAltura(float altura) {
+    public void setAltura(double altura) {
         this.altura = altura;
     }
 
-    public void setLargura(float largura) {
+    public void setLargura(double largura) {
         this.largura = largura;
     }
     
     // METODOS
-    public static double metroQuadradoPeQuadrado(float metroQuadrado){
+    public static double metroQuadradoPeQuadrado(double metroQuadrado){
          
         return metroQuadrado*10.76;
         
         
      }
     
-    public static double peQuadradoCmQuadrado (float peQuadrado){
+    public static double peQuadradoCmQuadrado (double peQuadrado){
         
         return peQuadrado*929;
         
     }
     
-    public static double milhaQuadradaAcre(float milhaQuadrada){
+    public static double milhaQuadradaAcre(double milhaQuadrada){
         
         return milhaQuadrada * 640;
         
     }
     
-    public static double acrePeQuadrado(float acre){
+    public static double acrePeQuadrado(double acre){
         
         return acre*43.560;
         
     }
     
     
-    public static double metroMetroQuadrado(float altura, float largura){
+    public static double metroMetroQuadrado(double altura, double largura){
         
         return altura*largura;
         
     }
     
+    public static double metroQuadradoAcre (double metroQuadrado){
+        
+        return metroQuadrado * 0.000247105;
+        
+    }
+    
+    public static double metroQuadradoCmquadrado (double metroQuadrado){
+        
+        return metroQuadrado * 10000;
+    }
     
 }
