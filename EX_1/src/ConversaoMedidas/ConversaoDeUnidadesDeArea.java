@@ -18,8 +18,23 @@ public class ConversaoDeUnidadesDeArea {
     private float peQuadrado;
     private float milhaQuadrada;
     private float acre;
+    private float altura;
+    private float largura;
+
     
     
+    
+    //SETS
+    
+    public void setAltura(float altura) {
+        this.altura = altura;
+    }
+
+    public void setLargura(float largura) {
+        this.largura = largura;
+    }
+    
+    // METODOS
     public static double metroQuadradoPeQuadrado(float metroQuadrado){
          
         return metroQuadrado*10.76;
@@ -42,6 +57,13 @@ public class ConversaoDeUnidadesDeArea {
     public static double acrePeQuadrado(float acre){
         
         return acre*43.560;
+        
+    }
+    
+    
+    public static double metroMetroQuadrado(float altura, float largura){
+        
+        return altura*largura;
         
     }
     
